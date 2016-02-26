@@ -1,0 +1,19 @@
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background: $white;
+  color: $black;
+}
+
+a{
+  color: $black;
+  text-decoration: none;
+  &:hover{
+    color: $grey;
+  }
+}
