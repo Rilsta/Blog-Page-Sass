@@ -1,14 +1,18 @@
 .nav-main{
-  border-top: 1px solid $light-grey;
+  // border-top: 1px solid $light-grey;
   ul{
     @include padding(0.25em null null null);
     text-align: center;
   }
   li{
-    @include padding(null 1em null 1em);
+    @include padding(1em 1em 1em 1em);
     font-size: 0.8em;
     letter-spacing: 1px;
-
-    display: inline;
+    &:hover{
+      background-color: $black;
+      a{
+        color: $white;
+      }
+    }
   }
 }

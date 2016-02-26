@@ -11,9 +11,9 @@ body{
 }
 
 a{
-  color: $black;
+  color: $text-color-secondary;
   text-decoration: none;
   &:hover{
-    color: $grey;
+    color: $text-color;
   }
 }

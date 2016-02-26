@@ -1,3 +1,6 @@
+//Google Fonts
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,300,300italic,700italic,900|Lato:400,300,300italic,400italic,700,700italic,900);
+
 //Color Variables
 
 $white: #f4f4f4;
@@ -7,9 +10,26 @@ $light-grey: #c9c9c9;
 
 //Color Descriptor Variables
 
-$logo-color: $grey;
+$logo-color: $white;
 $text-color: $black;
+$text-color-secondary: $grey;
 
-//Border Colors
+// Fonts
+$text-font: 'Merriweather';
+$header-font: 'Lato';
 
-$border-main: $light-grey;
+//Borders
+
+$border-main: 1px solid $light-grey;
+
+
+
+//Spacers
+
+$container-margin: auto;
+$container-mobile-width: 85%;
+
+//text adjustments
+$line-h: 20px;
+$letter-spacing: 1px;
+$letter-spacing-logo: 10px;
