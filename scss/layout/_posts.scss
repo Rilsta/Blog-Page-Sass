@@ -9,12 +9,12 @@
   p{
     @extend %text-size;
     margin: inherit;
-    max-width: 500px;
+    max-width: $content-max-width;
   }
   img{
     @extend %center-block;
     width:100%;
-    max-width: 500px;
+    max-width: $content-max-width;
     border-radius: 5px;
   }
 }
@@ -32,7 +32,6 @@
     font-family: $header-font;
     text-align: right;
   }
-
 
 }
 .post-links{

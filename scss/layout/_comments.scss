@@ -1,0 +1,30 @@
+.comments{
+  color: $text-color-secondary;
+  h3{
+    @include margin(0.5em null 0.5 null);
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  p{
+    @include margin(null null null 1em);
+    @extend %text-size;
+    font-family: $text-font;
+    max-width: 500px;
+  }
+  .comment-field{
+    @include margin(1em null null null);
+    textarea{
+      @include padding(0.5em 0.5em 0.5em 0.5em);
+      font-family: $text-font;
+      font-size: 0.8em;
+      width: 100%;
+      max-width: 500px;
+      border: none;
+      background: $light-grey;
+      border-radius: 5px;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}

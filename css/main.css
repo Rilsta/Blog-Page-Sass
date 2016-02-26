@@ -64,13 +64,18 @@ a {
 
 .container {
   margin: auto;
-  width: 85%; }
+  width: 85%;
+  max-width: 500px; }
+  @media screen and (min-width: 600px) {
+    .container {
+      margin: auto;
+      width: 80%; } }
 
-.nav-main li, .blog-post p, .post-heading p, .post-links {
+.nav-main li, .blog-post p, .post-heading p, .post-links, .comments p, button {
   font-size: 0.8em;
   letter-spacing: 1px; }
 
-.blog-post img {
+.blog-post img, button {
   display: block;
   margin: auto; }
 
@@ -79,15 +84,25 @@ a {
 .nav-main li {
   padding: 0.75em; }
   .nav-main li:hover {
-    background-color: #0c0c0c; }
+    background-color: #0c0c0c;
+    -webkit-transition: background-color .2s linear; }
     .nav-main li:hover a {
       color: #f4f4f4; }
+@media screen and (min-width: 600px) {
+  .nav-main ul {
+    display: block;
+    margin: auto;
+    width: 85%; }
+  .nav-main li {
+    padding: 0.75em 1.5em;
+    display: inline;
+    border-radius: 5px; } }
 
 .logo {
-  margin-top: 1.25em;
   margin-bottom: 1em; }
   .logo h1 {
-    padding-left: 1em;
+    padding-top: 1em;
+    padding-left: 1.1em;
     background: #0c0c0c;
     color: #f4f4f4;
     font-size: 1.5em;
@@ -130,7 +145,33 @@ a {
   font-family: "Lato";
   text-align: right; }
 
+.comments {
+  color: #707070; }
+  .comments h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    font-weight: bold; }
+  .comments p {
+    margin-left: 1em;
+    font-family: "Merriweather";
+    max-width: 500px; }
+  .comments .comment-field {
+    margin-top: 1em; }
+    .comments .comment-field textarea {
+      padding: 0.5em;
+      font-family: "Merriweather";
+      font-size: 0.8em;
+      width: 100%;
+      max-width: 500px;
+      border: none;
+      background: #c9c9c9;
+      border-radius: 5px; }
+      .comments .comment-field textarea:focus {
+        outline: none; }
+
 .footer {
+  margin-top: 1em;
   padding-top: 2%;
   padding-bottom: 2%;
   background: #0c0c0c;
@@ -142,5 +183,17 @@ a {
   .footer p {
     color: #c9c9c9;
     font-size: 0.7em; }
+
+button {
+  padding: 0.75em;
+  background: none;
+  color: #707070;
+  outline: none;
+  border: none;
+  border-radius: 5px; }
+  button:hover {
+    color: #f4f4f4;
+    background: #0c0c0c;
+    -webkit-transition: background-color .2s linear; }
 
 /*# sourceMappingURL=main.css.map */

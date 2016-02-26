@@ -1,0 +1,15 @@
+button{
+  @include padding(0.75em 0.75em 0.75em 0.75em);
+  @extend %center-block;
+  @extend %text-size;
+  background: none;
+  color: $text-color-secondary;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  &:hover{
+    color: $white;
+    background: $black;
+    -webkit-transition: background-color .2s linear;
+  }
+}

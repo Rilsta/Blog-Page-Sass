@@ -29,7 +29,10 @@ $border-main: 1px solid $light-grey;
 //Spacers
 
 $container-margin: auto;
-$container-mobile-width: 85%;
+$container-small-width: 85%;
+$container-medium-width: 80%;
+$container-max-width: 500px;
+$content-max-width: 500px;
 
 //text adjustments
 $line-h: 20px;

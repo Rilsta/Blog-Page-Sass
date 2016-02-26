@@ -1,4 +1,9 @@
 .container{
   margin: $container-margin;
-  width: $container-mobile-width;
+  width: $container-small-width;
+  max-width: $container-max-width;
+  @media screen and (min-width:600px){
+    margin: $container-margin;
+    width: $container-medium-width
+  }
 }
