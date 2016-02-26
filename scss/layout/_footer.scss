@@ -1,0 +1,14 @@
+.footer{
+  @include padding(2% null 2% null);
+  background: $black;
+  color: $white;
+  text-align: center;
+  i{
+    font-size: 2em;
+    color: $footer-color;
+  }
+  p{
+    color: $footer-color;
+    font-size: 0.7em;
+  }
+}

@@ -130,4 +130,17 @@ a {
   font-family: "Lato";
   text-align: right; }
 
+.footer {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background: #0c0c0c;
+  color: #f4f4f4;
+  text-align: center; }
+  .footer i {
+    font-size: 2em;
+    color: #c9c9c9; }
+  .footer p {
+    color: #c9c9c9;
+    font-size: 0.7em; }
+
 /*# sourceMappingURL=main.css.map */
