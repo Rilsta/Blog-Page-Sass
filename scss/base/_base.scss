@@ -8,6 +8,11 @@ body{
   font-family: sans-serif;
   background: $white;
   color: $black;
+  position: relative;
+  background-image: url('../img/lady4.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 a{
@@ -16,4 +21,10 @@ a{
   &:hover{
     color: $text-color;
   }
+}
+
+.background-image{
+  height: 100%;
+  width: 100vw;
+  background-image: url('../img/lady4.png');
 }

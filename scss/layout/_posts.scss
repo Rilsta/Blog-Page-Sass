@@ -15,7 +15,7 @@
     @extend %center-block;
     width:100%;
     max-width: $content-max-width;
-    border-radius: 5px;
+    border-radius: $border-radius;
   }
 }
 .post-heading{

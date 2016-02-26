@@ -20,7 +20,7 @@
       width: 100%;
       max-width: 500px;
       border: none;
-      background: $light-grey;
+      background: rgba($light-grey, 0.4);
       border-radius: 5px;
       &:focus{
         outline: none;

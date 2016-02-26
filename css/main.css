@@ -54,13 +54,23 @@ table {
 body {
   font-family: sans-serif;
   background: #f4f4f4;
-  color: #0c0c0c; }
+  color: #0c0c0c;
+  position: relative;
+  background-image: url("../img/lady4.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
 
 a {
   color: #707070;
   text-decoration: none; }
   a:hover {
     color: #0c0c0c; }
+
+.background-image {
+  height: 100%;
+  width: 100vw;
+  background-image: url("../img/lady4.png"); }
 
 .container {
   margin: auto;
@@ -127,7 +137,7 @@ a {
   .blog-post img {
     width: 100%;
     max-width: 500px;
-    border-radius: 5px; }
+    border-radius: 4px; }
 
 .post-heading {
   margin-bottom: 0.5em; }
@@ -165,7 +175,7 @@ a {
       width: 100%;
       max-width: 500px;
       border: none;
-      background: #c9c9c9;
+      background: rgba(201, 201, 201, 0.4);
       border-radius: 5px; }
       .comments .comment-field textarea:focus {
         outline: none; }
