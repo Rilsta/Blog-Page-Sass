@@ -55,7 +55,6 @@ body {
   font-family: sans-serif;
   background: #f4f4f4;
   color: #0c0c0c;
-  position: relative;
   background-image: url("../img/lady4.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,11 +66,6 @@ a {
   a:hover {
     color: #0c0c0c; }
 
-.background-image {
-  height: 100%;
-  width: 100vw;
-  background-image: url("../img/lady4.png"); }
-
 .container {
   margin: auto;
   width: 85%;
@@ -81,7 +75,7 @@ a {
       margin: auto;
       width: 80%; } }
 
-.nav-main li, .blog-post p, .post-heading p, .post-links, .comments p, button {
+.nav-main li, .blog-post p, .post-heading p, .post-links, .comments p, .comments .comment-field textarea, button {
   font-size: 0.8em;
   letter-spacing: 1px; }
 
@@ -106,7 +100,7 @@ a {
   .nav-main li {
     padding: 0.75em 1.5em;
     display: inline;
-    border-radius: 5px; } }
+    border-radius: 4px; } }
 
 .logo {
   margin-bottom: 1em; }
@@ -171,12 +165,11 @@ a {
     .comments .comment-field textarea {
       padding: 0.5em;
       font-family: "Merriweather";
-      font-size: 0.8em;
       width: 100%;
       max-width: 500px;
       border: none;
       background: rgba(201, 201, 201, 0.4);
-      border-radius: 5px; }
+      border-radius: 4px; }
       .comments .comment-field textarea:focus {
         outline: none; }
 
@@ -200,7 +193,7 @@ button {
   color: #707070;
   outline: none;
   border: none;
-  border-radius: 5px; }
+  border-radius: 4px; }
   button:hover {
     color: #f4f4f4;
     background: #0c0c0c;

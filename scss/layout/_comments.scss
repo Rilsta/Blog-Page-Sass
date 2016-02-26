@@ -9,19 +9,19 @@
     @include margin(null null null 1em);
     @extend %text-size;
     font-family: $text-font;
-    max-width: 500px;
+    max-width: $content-max-width;
   }
   .comment-field{
     @include margin(1em null null null);
     textarea{
       @include padding(0.5em 0.5em 0.5em 0.5em);
+      @extend %text-size;
       font-family: $text-font;
-      font-size: 0.8em;
       width: 100%;
-      max-width: 500px;
+      max-width: $content-max-width;
       border: none;
       background: rgba($light-grey, 0.4);
-      border-radius: 5px;
+      border-radius: $border-radius;
       &:focus{
         outline: none;
       }
