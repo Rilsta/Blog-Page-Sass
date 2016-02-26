@@ -66,13 +66,18 @@ a {
   margin: auto;
   width: 85%; }
 
-.nav-main ul {
-  padding-top: 0.25em;
-  text-align: center; }
-.nav-main li {
-  padding: 1em;
+.nav-main li, .blog-post p, .post-heading p, .post-links {
   font-size: 0.8em;
   letter-spacing: 1px; }
+
+.blog-post img {
+  display: block;
+  margin: auto; }
+
+.nav-main ul {
+  text-align: center; }
+.nav-main li {
+  padding: 0.75em; }
   .nav-main li:hover {
     background-color: #0c0c0c; }
     .nav-main li:hover a {
@@ -96,9 +101,18 @@ a {
 .blog-post {
   margin-top: 1em;
   padding-top: 1em;
+  display: block;
   font-family: "Merriweather";
   line-height: 20px;
-  border-top: 1px solid #c9c9c9; }
+  border-top: 1px solid #c9c9c9;
+  overflow: auto; }
+  .blog-post p {
+    margin: inherit;
+    max-width: 500px; }
+  .blog-post img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px; }
 
 .post-heading {
   margin-bottom: 0.5em; }
@@ -109,12 +123,10 @@ a {
     font-weight: bold; }
   .post-heading p {
     color: #707070;
-    font-size: 0.8em;
     font-family: "Lato";
     text-align: right; }
 
 .post-links {
-  font-size: 1em;
   font-family: "Lato";
   text-align: right; }
 

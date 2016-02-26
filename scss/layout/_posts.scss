@@ -1,9 +1,22 @@
 .blog-post{
   @include margin(1em null null null);
   @include padding(1em null null null);
+  display: block;
   font-family: $text-font;
   line-height: $line-h;
   border-top: $border-main;
+  overflow: auto;
+  p{
+    @extend %text-size;
+    margin: inherit;
+    max-width: 500px;
+  }
+  img{
+    @extend %center-block;
+    width:100%;
+    max-width: 500px;
+    border-radius: 5px;
+  }
 }
 .post-heading{
   @include margin(null null 0.5em null);
@@ -15,17 +28,15 @@
   }
   p{
     color: $text-color-secondary;
-    font-size: 0.8em;
+    @extend %text-size;
     font-family: $header-font;
     text-align: right;
   }
 
-.post-body{
-}
 
 }
 .post-links{
-  font-size: 1em;
+  @extend %text-size;
   font-family: $header-font;
   text-align: right;
 }
