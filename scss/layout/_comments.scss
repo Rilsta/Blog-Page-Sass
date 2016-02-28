@@ -1,5 +1,6 @@
 .comments{
   color: $text-color-secondary;
+  display: none;
   h3{
     @include margin(0.5em null 0.5 null);
     font-size: 0.9em;
@@ -11,6 +12,9 @@
     font-family: $text-font;
     max-width: $content-max-width;
   }
+}
+.field-hidden{
+  display: none;
   .comment-field{
     @include margin(1em null null null);
     textarea{

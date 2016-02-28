@@ -75,7 +75,7 @@ a {
       margin: auto;
       width: 80%; } }
 
-.nav-main li, .blog-post p, .post-heading p, .post-links, .comments p, .comments .comment-field textarea, button {
+.nav-main li, .blog-post p, .post-heading p, .post-links, .comments p, .field-hidden .comment-field textarea, button {
   font-size: 0.8em;
   letter-spacing: 1px; }
 
@@ -146,11 +146,28 @@ a {
     text-align: right; }
 
 .post-links {
-  font-family: "Lato";
-  text-align: right; }
+  text-align: right;
+  color: #707070; }
+  .post-links .fa-commenting:hover {
+    color: #0c0c0c;
+    cursor: pointer; }
+  .post-links .fa-commenting-o {
+    display: none; }
+    .post-links .fa-commenting-o:hover {
+      color: #0c0c0c;
+      cursor: pointer; }
+  .post-links .fa-comment:hover {
+    color: #0c0c0c;
+    cursor: pointer; }
+  .post-links .fa-comment-o {
+    display: none; }
+    .post-links .fa-comment-o:hover {
+      color: #0c0c0c;
+      cursor: pointer; }
 
 .comments {
-  color: #707070; }
+  color: #707070;
+  display: none; }
   .comments h3 {
     margin-top: 0.5em;
     margin-bottom: 0.5em;
@@ -160,9 +177,12 @@ a {
     margin-left: 1em;
     font-family: "Merriweather";
     max-width: 500px; }
-  .comments .comment-field {
+
+.field-hidden {
+  display: none; }
+  .field-hidden .comment-field {
     margin-top: 1em; }
-    .comments .comment-field textarea {
+    .field-hidden .comment-field textarea {
       padding: 0.5em;
       font-family: "Merriweather";
       width: 100%;
@@ -170,7 +190,7 @@ a {
       border: none;
       background: rgba(201, 201, 201, 0.4);
       border-radius: 4px; }
-      .comments .comment-field textarea:focus {
+      .field-hidden .comment-field textarea:focus {
         outline: none; }
 
 .footer {
