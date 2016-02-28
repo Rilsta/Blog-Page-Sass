@@ -38,26 +38,23 @@
   @extend %text-size;
   text-align: right;
   color: $text-color-secondary;
+
   .fa-commenting:hover{
-    color: $text-color;
-    cursor: pointer;
+    @extend %link-hover;
   }
   .fa-commenting-o{
     display: none;
     &:hover{
-      color: $text-color;
-      cursor: pointer;
+      @extend %link-hover;
     }
   }
   .fa-comment:hover{
-    color: $text-color;
-    cursor: pointer;
+    @extend %link-hover;
   }
   .fa-comment-o{
     display: none;
     &:hover{
-      color: $text-color;
-      cursor: pointer;
+      @extend %link-hover;
     }
   }
 }

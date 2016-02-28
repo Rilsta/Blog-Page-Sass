@@ -83,6 +83,10 @@ a {
   display: block;
   margin: auto; }
 
+.post-links .fa-commenting:hover, .post-links .fa-commenting-o:hover, .post-links .fa-comment:hover, .post-links .fa-comment-o:hover {
+  color: #0c0c0c;
+  cursor: pointer; }
+
 .nav-main ul {
   text-align: center; }
 .nav-main li {
@@ -148,22 +152,10 @@ a {
 .post-links {
   text-align: right;
   color: #707070; }
-  .post-links .fa-commenting:hover {
-    color: #0c0c0c;
-    cursor: pointer; }
   .post-links .fa-commenting-o {
     display: none; }
-    .post-links .fa-commenting-o:hover {
-      color: #0c0c0c;
-      cursor: pointer; }
-  .post-links .fa-comment:hover {
-    color: #0c0c0c;
-    cursor: pointer; }
   .post-links .fa-comment-o {
     display: none; }
-    .post-links .fa-comment-o:hover {
-      color: #0c0c0c;
-      cursor: pointer; }
 
 .comments {
   color: #707070;
