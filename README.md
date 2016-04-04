@@ -4,7 +4,7 @@
 Build a static blog page in Sass.
 
 ##View
-https://rilsta.github.io/Blog-Post-Sass/
+https://rilsta.github.io/Blog-Page-Sass/
 
 ##License
 MIT License 2016
